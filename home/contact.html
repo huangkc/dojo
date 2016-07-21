@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Dojo Website</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <style>
+       #map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+</head>
+<body>
+
+<div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo">XYZ Aikikai</a>
+
+        <ul class="right hide-on-med-and-down">
+
+          <li><a class='dropdown-button' data-beloworigin="true" href="#" data-activates='dropdown1'>About</a></li>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="aikido.html">What is Aikido?</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          <li><a href="instructors.html">Instructors</a></li>
+
+          <li><a class='dropdown-button' data-beloworigin="true" data-activates='dropdown2' href="#">Schedule & Dues</a></li> 
+            <ul id='dropdown2' class='dropdown-content'>
+              <li><a href="schedule.html">Class Schedule</a></li>
+              <li><a href="fees.html">Fees</a></li>
+            </ul>
+
+          <li><a class='dropdown-button' data-beloworigin="true" data-activates='dropdown3' href="#">Programs</a></li>
+          <ul id='dropdown3' class='dropdown-content'>  
+              <li><a href="adult_class.html">Adult</a></li>
+              <li><a href="children_class.html">Children</a></li>
+              <li><a href="weapons.html">Weapons</a></li>
+            </ul>
+
+          <li><a href="events.html">Events</a></li>
+
+          <li><a class='dropdown-button' data-beloworigin="true" data-activates='dropdown4' href="#">Resources</a></li>
+
+            <ul class='dropdown-content' id='dropdown4'>
+                
+              <li><a href="etiquette.html">Dojo Etiquette</a></li>
+              <li><a href="newstudent.html">For New Students</a></li>
+              <li><a href="testing.html">Testing Requirements</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+
+            </ul>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="aikido.html">Aikido</a></li>
+          <li><a href="iaido.html">Iaido</a></li>
+          <li><a href="about.html">Dojo</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="links.html">Resources</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <h3></h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+      	var myCenter = {lat: 37.934802, lng: -122.308582};
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: myCenter,
+            zoom: 8,
+        });
+        var marker = new google.maps.Marker({
+		    position: myCenter,
+		    map: map,
+		    title: '2550 Tamalpais Avenue El Cerrito CA 94530'
+			  });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGLT05AiqH5PAqdTUt83prNqXbEGu2Z4&callback=initMap">
+    </script>
+
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="section">
+        <div class="row">
+
+          <div class="col s12 center"></div>
+
+            <div class="col s6">
+              <p><img src="imgs/donovan2.jpg" height="320px" width="420px"></p>
+              <p>2550 Tamalpais Avenue</br>
+              El Cerrito, CA 94530</br>
+              (917) 518-6181</br>
+              Email: xyz@xyz.com
+            </div>
+          
+          <div class="col s6 center">
+            <h6 class="left-align light">
+              <h5>DIRECTIONS</h5></br>
+              <h6 class="left-align">
+
+              PUBLIC TRANSPORTATION</br>
+              We are located across from the Forest Hills stop on the Orange Line</br></br>
+
+              BY CAR</br>
+              Parking is available on surrounding streets.</br>
+              </h6>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class =white-text>XYZ Aikikai</h5>
+          <h6 class="white-text">
+          <p class="grey-text text-lighten-4">
+          2550 Tamalpais Avenue</br>
+          El Cerrito, CA 94530</br>
+          (917) 518-6181
+          <a class="white-text" href="mailto:huangkc05@gmail.com">
+          <p class="light-blue-text"><i class="small material-icons">email</i></p>
+          </a>
+          </h6>
+        </div>
+        <div class="col l3 s12">
+<!--           <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+ -->        </div>
+        <div class="col l3 s12">
+          <!-- <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <p class="black-text">copyright 2016 XYZ Aikikai</p>
+      </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
