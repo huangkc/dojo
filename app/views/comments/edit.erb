@@ -1,0 +1,8 @@
+
+<form action="/comments/<%= @comment.id%>" method="post">
+<input type="hidden" name="_method" value="put">
+<p><textarea type="text" placeholder="<%= @comment.text %>" name = "text"></textarea></p>
+<input type="submit" value="Submit"/>
+</form>
+
+

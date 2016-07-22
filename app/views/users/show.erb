@@ -1,0 +1,40 @@
+<% if current_user %>
+<%=@user.username %>'s posts:
+
+<ul>
+	<% @posts.each do |post| %>
+		<p><%= post.title %>
+		<p><%= post.content %>
+
+		<form action="/posts/<%= post.id%>" method="POST">	
+		<input type="hidden" name="_method" value="delete">
+		<input type="submit" value="Delete this post">
+		</form>		
+		</p>
+		<p><a href="/posts/<%= post.id %>/edit">Edit this post</a></p>
+		<% end %>
+		<hr>
+</ul>
+	<p><a href="/posts/new">Add a post</a></p>
+	<hr>
+
+<%=@user.username %>'s comments:
+<ul>
+	<% @comments.each do |comment| %>
+		<p>
+		<%= comment.text %>
+		<form action="/comments/<%= comment.id%>" method="POST">
+			<input type="hidden" name="_method" value="delete">
+			<input type="submit" value="Delete this comment">
+		</form>
+		<a href="/comments/<%= comment.id %>/edit">Edit this comment</a><hr>
+		</p>
+		<% end %>
+</ul>
+<% end %>
+<p><h3>All Posts:</h3></p>
+<ul>
+	<% @all_posts.each do|post| %>
+		<a href="/posts/<%= post.id %>"><p><%= post.title %></p></a>
+	<% end %>
+</ul>

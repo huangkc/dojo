@@ -1,0 +1,28 @@
+<strong><p><%= @post.user.username %></p></strong>
+<p> Title: <%= @post.title %></p>
+<p> Description: <%= @post.content %></p>
+<hr>
+<ul>
+
+<% if current_user %>
+	<form action="/comments" method="post">
+	<p><textarea type="text" placeholder="" name = "text"></textarea></p>
+	<input type="submit" value="Submit"/>
+	</form>
+	<hr>
+	<% @comments.each do |comment| %>
+	<strong><p><%= comment.user.username%>: </p></strong>
+	<p><%= comment.text %></p>
+	<hr>
+	<% end %>
+	</ul>
+	<hr>
+	<ul>
+	<% @posts.each do |post| %>
+	<li><a href="/posts/<%= post.id %>"><%= post.title %></li>
+	<% end %>
+	</ul>
+<% end %>
+
+
+
