@@ -1,0 +1,17 @@
+<div class="container">
+<h1>Create an account</h1>
+<form action="/users" method="post" >
+	<%= erb(:'/users/_login_form', :layout => false) %>
+	<!-- <label for="username">Username:</label>    
+    <input id="username" type="text" name="username" placeholder="username"><br><br>
+    <label for="password">Password:</label>
+    <input id="password" type="password" name="password" placeholder="password"><br><br> -->
+    <input type="submit" value="Create"/>
+</form>
+
+<% if flash[:error]%>
+  <%= flash[:error]  %>
+<% end %>
+  <br>
+</div>
+

@@ -1,0 +1,23 @@
+
+<% if current_user %>
+<% @posts.each do |post| %>
+
+<p>	<%=post.title %></p>
+	<%=post.content %></p>
+
+<% end %>
+
+<form action="/comments" method="post">
+<p><textarea type="text" name = "description"></textarea></p>
+<input type="submit" value="Add a comment"/>
+</form>
+
+<% else %>
+
+
+<strong><p>Lorem ipsum dolor sit ametconsectetuer adipiscing elit
+</p></strong>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+
+<% end %>

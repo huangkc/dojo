@@ -1,0 +1,10 @@
+<p>Update this post</p>
+
+<form action="/posts/<%= @post.id%>" method="post">
+<input type="hidden" name="_method" value="put">
+<p><input type="text" value="<%= @post.title %>" name = "title"></input></p>
+<p><textarea type="text" placeholder="<%= @post.content %>" name = "content"></textarea></p>
+<input type="submit" value="Submit"/>
+</form>
+
+
