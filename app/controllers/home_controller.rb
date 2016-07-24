@@ -57,6 +57,8 @@ get '/contact' do
 	erb :'home/contact'
 end
 
-
+get '/blog' do 
+	erb :'home/blog' 
+end
 
 
