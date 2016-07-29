@@ -29,8 +29,13 @@ end
 get '/children_class' do
 	erb :'home/children_class'	
 end
+
 get '/weapons' do
 	erb :'home/weapons'	
+end
+
+get '/iaido' do
+	erb :'home/iaido'	
 end
 
 get '/events' do
