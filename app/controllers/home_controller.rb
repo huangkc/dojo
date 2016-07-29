@@ -66,4 +66,7 @@ get '/blog' do
 	erb :'home/blog' 
 end
 
+get '/ki' do 
+	erb :'home/ki' 
+end
 
