@@ -54,8 +54,8 @@ get '/testing' do
 	erb :'home/testing'
 end
 
-get '/gallery' do
-	erb :'home/gallery'
+get '/media' do
+	erb :'home/media'
 end
 
 get '/contact' do
