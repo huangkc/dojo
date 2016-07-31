@@ -58,6 +58,10 @@ get '/media' do
 	erb :'home/media'
 end
 
+get '/directions' do
+	erb :'home/directions'
+end
+
 get '/contact' do
 	erb :'home/contact'
 end
