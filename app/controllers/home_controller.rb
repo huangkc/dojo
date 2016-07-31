@@ -29,8 +29,13 @@ end
 get '/children_class' do
 	erb :'home/children_class'	
 end
+
 get '/weapons' do
 	erb :'home/weapons'	
+end
+
+get '/iaido' do
+	erb :'home/iaido'	
 end
 
 get '/events' do
@@ -49,14 +54,19 @@ get '/testing' do
 	erb :'home/testing'
 end
 
-get '/gallery' do
-	erb :'home/gallery'
+get '/media' do
+	erb :'home/media'
 end
 
 get '/contact' do
 	erb :'home/contact'
 end
 
+get '/blog' do 
+	erb :'home/blog' 
+end
 
-
+get '/ki' do 
+	erb :'home/ki' 
+end
 
