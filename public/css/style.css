@@ -9,18 +9,12 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
-  /*font-size: 1em;*/
 }
-
 
 p {
   line-height: 1.5rem;
 }
 
-/*#map {
-        width: 100%;
-        height: 400px;
-      }*/
 .button-collapse {
   color: #26a69a;
 }
@@ -28,7 +22,6 @@ p {
 .parallax-container {
   min-height: 380px;
   line-height: 0;
-  height: auto;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
