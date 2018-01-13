@@ -74,3 +74,6 @@ get '/ki' do
 	erb :'home/ki' 
 end
 
+get '/special' do
+	erb :'home/special'
+end
