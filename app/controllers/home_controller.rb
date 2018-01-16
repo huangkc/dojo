@@ -77,3 +77,7 @@ end
 get '/special' do
 	erb :'home/special'
 end
+
+get '/driving' do 
+	erb :'home/driving'
+end
