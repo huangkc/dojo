@@ -74,3 +74,14 @@ get '/ki' do
 	erb :'home/ki' 
 end
 
+get '/special' do
+	erb :'home/special'
+end
+
+get '/privatelesson' do 
+	erb :'home/privatelesson'
+end
+
+get '/driving' do 
+	erb :'home/driving'
+end
