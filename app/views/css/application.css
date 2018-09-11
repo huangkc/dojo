@@ -5,15 +5,13 @@
  *
  * Made By MaterializeCSS.com
  */
-
+ .bold-text {
+    font-weight: bold;
+  }
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
-
-.bold-text {
-    font-weight: bold;
-  }
 
 p {
   line-height: 1.5rem;
@@ -26,6 +24,7 @@ p {
 .parallax-container {
   min-height: 380px;
   line-height: 0;
+  /*height: auto;*/
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
@@ -58,3 +57,4 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
