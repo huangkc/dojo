@@ -3,9 +3,6 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
-html {
-    font-family: GillSans, Calibri, Trebuchet, sans-serif;
-  }
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -4362,7 +4359,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.64rem;
+  font-size: 1001.64rem;
   line-height: 110%;
   margin: 0.82rem 0 0.656rem 0;
 }
